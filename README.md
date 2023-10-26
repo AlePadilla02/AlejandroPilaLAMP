@@ -4,6 +4,10 @@
 1. [Introducción](#introducción)
 2. [Configuración de la máquina Apache](#configuración-de-la-máquina-apache)
    - [Instalación de Apache y PhP](#instalación-de-apache-y-php)
+   - [Configuración de Apache y PhP](#configuración-de-apache-y-php)
+3. [Configuración de la máquina MariaDB](#configuración-de-la-máquina-mariadb)
+   - [Instalación de MariaDB](#instalación-de-mariadb)
+4. [Resultado](#resultado)
 
 ## Introducción:
 ### En esta práctica realizaremos el lanzamiento de dos máquinas virtuales, donde una de ellas contendrá Apache y PHP con salida a internet, y la otra contendrá MariaDB sin salida a internet.
@@ -36,6 +40,41 @@
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/21339330-cd1f-4b22-b8b9-f67b376acbc0)
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/8a13e583-70b4-4710-80c8-d7ba40391659)
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/a8bcae02-2213-40e6-91cf-988d979e02fd)
+#### Una vez realizado todo, debemos reiniciar el servicio apache:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/7019d818-91ec-4c12-b3c5-680c0f81f796)
+#### Y ahora comprobamos que han surtido efecto los cambios accediendo desde nuestra máquina física:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/2afeb4e3-fc80-406a-b3cc-1206a99226d6)
+
+## Configuración de la máquina MariaDB:
+### Instalación de MariaDB:
+#### Al igual que la instalación de Apache y PhP, realizaremos dicha instalación con un script el cual contiene el siguiente código detallado por un echo, además de eliminar la ruta por defecto para que no tenga salida a internet:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/11f9ffbe-ba41-4d81-ba9c-4903f0dcb129)
+
+### Configuración de MariaDB:
+#### Comprobamos que se ha instalado y esta en funcionamiento MariaDB:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/29283131-02a2-49f0-8762-4d44a33f1f3c)
+
+#### Ahora procederemos a añadir un usuario a la base de datos y otorgarle los permisos:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/05ae8cc2-092d-4b3b-9300-6c371a9682bf)
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/1bd45c43-ccc9-4bd3-a77f-ee365b4848a3)
+
+#### Deberemos editar el fichero 50-server.cnf en la ruta /etc/mysql/mariadb.conf.d y añadir la dirección IP de nuestro SGDB en bind-address para permitir acceso a nuestra base de datos al usuario creado:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/f19b6d53-85db-4883-8e46-42f94124c2f3)
+
+#### Por último quedaría clonar el repositorio de la base de datos a través de una carpeta compartida, debido a que no tiene salida a internet y hacer sus respectivas modificaciones como el servidor Apache:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/8a095798-e211-4d71-ae1f-960cf53a115e)
+
+## Resultado:
+#### Tenemos aquí el resultado de como iniciamos sesion desde la máquina Apache a la base de datos:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/1463113d-fe51-422d-b270-9abddf57ee03)
+
+
+
+
+
+
+
+
 
 
 
