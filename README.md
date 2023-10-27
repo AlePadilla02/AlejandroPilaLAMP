@@ -73,7 +73,9 @@
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/0ef57923-cb13-41fe-8535-527aca7c557a)
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/0aba8076-4946-48a0-aac9-2a212ba04b80)
 
-#### En el repositorio está el vídeo donde se prueba que funciona ambos servidores y recogen datos.
+#### Aquí está el vídeo donde se prueba que funciona ambos servidores y recogen datos.
+https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/d65774b1-e499-47b4-bc43-13f925ca6e37
+
 
 
 
