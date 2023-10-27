@@ -55,8 +55,8 @@
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/29283131-02a2-49f0-8762-4d44a33f1f3c)
 
 #### Ahora procederemos a añadir un usuario a la base de datos y otorgarle los permisos:
-![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/05ae8cc2-092d-4b3b-9300-6c371a9682bf)
-![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/1bd45c43-ccc9-4bd3-a77f-ee365b4848a3)
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/0e89464d-f781-42a3-bca1-8b5777bfb5de)
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/71121b19-1208-4e75-9820-871294097834)
 
 #### Deberemos editar el fichero 50-server.cnf en la ruta /etc/mysql/mariadb.conf.d y añadir la dirección IP de nuestro SGDB en bind-address para permitir acceso a nuestra base de datos al usuario creado:
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/f19b6d53-85db-4883-8e46-42f94124c2f3)
@@ -65,8 +65,21 @@
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/8a095798-e211-4d71-ae1f-960cf53a115e)
 
 ## Resultado:
-#### Tenemos aquí el resultado de como iniciamos sesion desde la máquina Apache a la base de datos:
-![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/1463113d-fe51-422d-b270-9abddf57ee03)
+#### Tenemos aquí el resultado de como iniciamos sesion desde la máquina Apache a la base de datos habiendo configurado previamente el fichero config.php de la carpeta src:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/f37ed568-2714-440e-9f87-fb539d6846e7)
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/e734940e-2b43-41ec-aa2c-3034f16a998b)
+
+#### Comprobamos que funciona agregar datos:
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/0ef57923-cb13-41fe-8535-527aca7c557a)
+![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/0aba8076-4946-48a0-aac9-2a212ba04b80)
+
+#### En el repositorio está el vídeo donde se prueba que funciona ambos servidores y recogen datos.
+
+
+
+
+
+
 
 
 
