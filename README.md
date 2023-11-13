@@ -16,7 +16,7 @@
 ## Configuración de la máquina Apache:
 
 ### Instalación de Apache y PhP:
-#### Con un scrip realizaremos dicha instalación, el cual contiene el siguiente código detallado por un echo. Además, también se ha de instalar el paquete git:
+#### Con un script realizaremos dicha instalación, el cual contiene el siguiente código detallado por un echo. Además, también se ha de instalar el paquete git:
 ![image](https://github.com/AlePadilla02/AlejandroPilaLAMP/assets/146703765/a3611916-453e-4099-aa0a-01f9c984c08a)
 
 
